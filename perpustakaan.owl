@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#"
-     xml:base="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3"
+<rdf:RDF xmlns="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#"
+     xml:base="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan"/>
     
 
 
@@ -21,38 +21,38 @@
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#archivedIn -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#archivedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#archivedIn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Library"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#archivedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Library"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#kindOf -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#kindOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#kindOf">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Category"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#kindOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Category"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#publishedBy -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#publishedBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#publishedBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Publisher"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#publishedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Publisher"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#writtenBy -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#writtenBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#writtenBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Author"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#writtenBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author"/>
     </owl:ObjectProperty>
     
 
@@ -68,15 +68,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#name -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#name -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#name">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Author"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Category"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Library"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Person"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Publisher"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Category"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Library"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Publisher"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -93,41 +93,41 @@
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Author -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Author">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Person"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Person"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Category -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Category -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Category"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Category"/>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Library -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Library -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Library"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Library"/>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Person -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Person -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Person"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Person"/>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Publisher -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Publisher -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Publisher"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Publisher"/>
     
 
 
@@ -142,101 +142,251 @@
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Auth_CLAR_LAWRENCE_M -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_ANDERSON_JAMES -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Auth_CLAR_LAWRENCE_M">
-        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Author"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_ANDERSON_JAMES">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANDERSON JAMES</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_CLAR_LAWRENCE_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_CLAR_LAWRENCE_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author"/>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lawrence m clar</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Auth_KREYSZIG_ERWIN -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_KREYSZIG_ERWIN -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Auth_KREYSZIG_ERWIN">
-        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Author"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_KREYSZIG_ERWIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author"/>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erwin kreyszig</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book_1 -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_andres_paul -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book_1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book"/>
-        <archivedIn rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#FMIPA"/>
-        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Cat_ENGINEERING"/>
-        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Cat_MATHEMATIC"/>
-        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Pub_JohnWiley"/>
-        <writtenBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Auth_KREYSZIG_ERWIN"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_andres_paul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">andres paul g</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_lovas_laszlo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_lovas_laszlo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lovas, laszlo</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_westergren -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_westergren">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">l. rade, b. westergren</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_zienkiewicz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_zienkiewicz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zienkiewicz, o.c</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <archivedIn rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_ENGINEERING"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_MATHEMATIC"/>
+        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_JohnWiley"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_KREYSZIG_ERWIN"/>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advanced engineering mathematics</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book_2 -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book_2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book"/>
-        <archivedIn rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#FMIPA"/>
-        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Cat_CALCULUS"/>
-        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Cat_MATHEMATIC"/>
-        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Pub_PrenticeHall"/>
-        <writtenBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Auth_CLAR_LAWRENCE_M"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <archivedIn rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_CALCULUS"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_MATHEMATIC"/>
+        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_PrenticeHall"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_CLAR_LAWRENCE_M"/>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mathematics for the technologies with calculus</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Cat_CALCULUS -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_3 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Cat_CALCULUS">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <archivedIn rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_DISCRETE"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_MATHEMATIC"/>
+        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_PrenticeHall"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_ANDERSON_JAMES"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <archivedIn rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_Basic"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_MATHEMATIC"/>
+        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_JohnWiley"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_andres_paul"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic mathematics for science and engineering</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <archivedIn rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_Handbook"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_MATHEMATIC"/>
+        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_springer"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_westergren"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mathematics handbook for science and engineeriing</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <archivedIn rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_DISCRETE"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_MATHEMATIC"/>
+        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_springer"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_lovas_laszlo"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">discrete mathematics elementary and beyond</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <archivedIn rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_DISCRETE"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_MATHEMATIC"/>
+        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_springer"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_zienkiewicz"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the finite element method</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_Basic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_Basic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Category"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basic</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_CALCULUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_CALCULUS">
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calculus</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Cat_ENGINEERING -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_DISCRETE -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Cat_ENGINEERING">
-        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Category"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_DISCRETE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Category"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">discrete</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_ENGINEERING -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_ENGINEERING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Category"/>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">engineering</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Cat_MATHEMATIC -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_Handbook -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Cat_MATHEMATIC">
-        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Category"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_Handbook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Category"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handbook</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_MATHEMATIC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_MATHEMATIC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Category"/>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mathematic</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#FMIPA -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#FMIPA">
-        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Library"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Library"/>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fakultas matematika dan ilmu pengetahuan alam</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Pub_JohnWiley -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_JohnWiley -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Pub_JohnWiley">
-        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Publisher"/>
-        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Book_1"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_JohnWiley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Publisher"/>
+        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_1"/>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">john wiley &amp; sons</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Pub_PrenticeHall -->
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_PrenticeHall -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/untitled-ontology-3#Pub_PrenticeHall">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_PrenticeHall">
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prentice hall</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_springer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_springer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Publisher"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">springer</name>
     </owl:NamedIndividual>
 </rdf:RDF>
 
