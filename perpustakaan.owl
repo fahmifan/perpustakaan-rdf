@@ -178,11 +178,38 @@
     
 
 
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_burn_bob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_burn_bob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burn, bob</name>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_lovas_laszlo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_lovas_laszlo">
         <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author"/>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lovas, laszlo</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_ogata_katsuhiko -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_ogata_katsuhiko">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ogata katsuhiko</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_shifrin_theodore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_shifrin_theodore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Author"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shifrin theodore</name>
     </owl:NamedIndividual>
     
 
@@ -215,6 +242,20 @@
         <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_JohnWiley"/>
         <writtenBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_KREYSZIG_ERWIN"/>
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advanced engineering mathematics</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <archivedIn rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_ENGINEERING"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_control"/>
+        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_PrenticeHall"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_ogata_katsuhiko"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modern control engineering</name>
     </owl:NamedIndividual>
     
 
@@ -302,6 +343,33 @@
     
 
 
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <archivedIn rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_MATHEMATIC"/>
+        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_imperial_college_pres"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_burn_bob"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">teaching undergraduate mathematics</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Book"/>
+        <archivedIn rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_MATHEMATIC"/>
+        <kindOf rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_multivariable"/>
+        <publishedBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_JohnWiley"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Auth_shifrin_theodore"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multivariable mathematics (linear algebra multivariable calculus and manifolds)</name>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_Basic -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_Basic">
@@ -355,6 +423,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_control -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_control">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Category"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">control</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_multivariable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Cat_multivariable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Category"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multivariable</name>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#FMIPA">
@@ -378,6 +464,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_PrenticeHall">
         <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prentice hall</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_imperial_college_pres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Pub_imperial_college_pres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#Publisher"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imperial college pres</name>
     </owl:NamedIndividual>
     
 
