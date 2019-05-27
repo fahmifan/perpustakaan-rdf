@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-const books = require('./data');
+const books = require('./input/data');
 
 function getCats(books) {
   let ncats = {};
@@ -186,7 +186,7 @@ function main() {
     + createPubs(bpubs) 
     + booksOwl;
 
-  fs.writeFileSync('./output/test.ttl', owls)
+  fs.writeFileSync('./output/perpustakaan.ttl', owls)
 }
 
 main();
