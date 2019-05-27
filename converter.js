@@ -93,59 +93,56 @@ function createAuthor(auths) {
   return sauths;
 }
 
-// console.log('pubs', createAuthor(getAuthor(books)))
-// createPubs(getPubs(books)).forEach(c => console.log(c))
-// console.log('pubs', getPubs(books));
-// console.log('categories', (getCats(books)));
-
-
-const header = `
-    @prefix :      <http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#> .
-    @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix owl:   <http://www.w3.org/2002/07/owl#> .
-    @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-    @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-    <http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan>
-            a       owl:Ontology .
-
-    :archivedIn  a       owl:ObjectProperty ;
-            rdfs:domain  :Book ;
-            rdfs:range   :Library .
-
-    :Book   a       owl:Class .
-
-    :Library  a     owl:Class .
-
-    :kindOf  a           owl:ObjectProperty ;
-            rdfs:domain  :Book ;
-            rdfs:range   :Category .
-
-    :Category  a    owl:Class .
-
-    :publishedBy  a      owl:ObjectProperty ;
-            rdfs:domain  :Book ;
-            rdfs:range   :Publisher .
-
-    :Publisher  a   owl:Class .
-
-    :writtenBy  a        owl:ObjectProperty ;
-            rdfs:domain  :Book ;
-            rdfs:range   :Author .
-
-    :Author  a               owl:Class ;
-            rdfs:subClassOf  :Person .
-
-    :name   a            owl:DatatypeProperty ;
-            rdfs:domain  :Book , :Library , :Category , :Publisher , :Author , :Person ;
-            rdfs:range   xsd:string .
-
-    :Person  a      owl:Class .
-
-    :FMIPA  a       :Library , owl:NamedIndividual ;
-            :name   "fakultas matematika dan ilmu pengetahuan alam" .
-    \n
-`
+const header = () => {
+  return `
+      @prefix :      <http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#> .
+      @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+      @prefix owl:   <http://www.w3.org/2002/07/owl#> .
+      @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+      @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+  
+      <http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan>
+              a       owl:Ontology .
+  
+      :archivedIn  a       owl:ObjectProperty ;
+              rdfs:domain  :Book ;
+              rdfs:range   :Library .
+  
+      :Book   a       owl:Class .
+  
+      :Library  a     owl:Class .
+  
+      :kindOf  a           owl:ObjectProperty ;
+              rdfs:domain  :Book ;
+              rdfs:range   :Category .
+  
+      :Category  a    owl:Class .
+  
+      :publishedBy  a      owl:ObjectProperty ;
+              rdfs:domain  :Book ;
+              rdfs:range   :Publisher .
+  
+      :Publisher  a   owl:Class .
+  
+      :writtenBy  a        owl:ObjectProperty ;
+              rdfs:domain  :Book ;
+              rdfs:range   :Author .
+  
+      :Author  a               owl:Class ;
+              rdfs:subClassOf  :Person .
+  
+      :name   a            owl:DatatypeProperty ;
+              rdfs:domain  :Book , :Library , :Category , :Publisher , :Author , :Person ;
+              rdfs:range   xsd:string .
+  
+      :Person  a      owl:Class .
+  
+      :FMIPA  a       :Library , owl:NamedIndividual ;
+              :name   "fakultas matematika dan ilmu pengetahuan alam" .
+      \n
+  `
+}
+  
 
 function main() {
   const bcats = getCats(books);
@@ -181,7 +178,7 @@ function main() {
 
   }
 
-  const owls = header 
+  const owls = header() 
     + createCategories(bcats) 
     + createAuthor(bauthor) 
     + createPubs(bpubs) 
