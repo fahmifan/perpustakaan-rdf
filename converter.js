@@ -2,32 +2,7 @@
 
 const fs = require('fs');
 
-const books = [
-  {
-    "No": 1,
-    "Title": "advanced engineering mathematics",
-    "Author": "kreyszig,erwin",
-    "Library": "fakultas matematika dan ilmu pengetahuan alam",
-    "Publisher": "john wiley and sons",
-    "Category": "mathematic; engineering; database management"
-  },
-  {
-    "No": 2,
-    "Title": "mathematics for the technologies with calculus",
-    "Author": "clar,lawrence m",
-    "Library": "fakultas matematika dan ilmu pengetahuan alam",
-    "Publisher": "prentice hall",
-    "Category": "calculus; mathematic"
-  },
-  {
-    "No": 3,
-    "Title": "discrete mathematics with combinatoric",
-    "Author": "anderson,james a",
-    "Library": "fakultas matematika dan ilmu pengetahuan alam",
-    "Publisher": "prentice hall",
-    "Category": "discrete; mathematic"
-  },
-]
+const books = require('./data');
 
 function getCats(books) {
   let ncats = {};
@@ -63,7 +38,6 @@ function getPubs(books) {
   for (let i = 0; i < books.length; i++) {
     const b = books[i];
     pubs[b.Publisher] = b.Publisher.split(" ").join("_");
-    console.log('getpubs', pubs[b.Publisher])
   }
 
   return pubs;
@@ -73,7 +47,6 @@ function createPubs(pubs) {
   let spubs = '';
 
   Object.keys(pubs).forEach(el => {
-    console.log('createPubs', pubs[el]);
     p = `
     :Pub_${pubs[el]}
             a       :Publisher , owl:NamedIndividual ;
@@ -99,7 +72,6 @@ function getAuthor(books) {
     const b = books[i];
     const comma = b.Author.indexOf(",")
     const a = comma ? rmComma(comma, b.Author) : b.Author
-    console.log(comma, a);
     auths[b.Author] = a.split(" ").join("_");
   }
 
