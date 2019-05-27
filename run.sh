@@ -1,5 +1,5 @@
 echo ">>> generate csv"
-node_modules/csvtojson/bin/csvtojson ./input/data.csv > ./input/data.js
+node_modules/csvtojson/bin/csvtojson ./input/data.csv > ./input/data.json
 
 echo ">>> generate turtle file"
 ./converter.js

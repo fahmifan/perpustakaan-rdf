@@ -2,7 +2,8 @@
 
 const fs = require('fs');
 
-const books = require('./input/data');
+const bookFile = fs.readFileSync('./input/data.json')
+const books = JSON.parse(bookFile.toString())
 
 function getCats(books) {
   let ncats = {};
