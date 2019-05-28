@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 
 from lxml import html
-from multiprocessing.dummy import Pool
 import requests
 import time
-
-pool = Pool(4)
+import csv
 
 base_url = 'https://lib.unpad.ac.id'
 page_url = base_url + '/index.php?search=Search&keywords=&filterby[node]=Fakultas%20Matematika%20dan%20Ilmu%20Pengetahuan%20Alam&filterby[gmd]=Text&page=20'
@@ -14,7 +12,6 @@ tree = html.fromstring(page.content)
 
 # get books
 books = tree.xpath('//div[@class="item biblioRecord uk-text-center "]')
-# print(books)
 
 # url to the book
 book_links = []
@@ -23,6 +20,7 @@ for b in books:
 	for l in links:
 		book_links.append(l.attrib['href'])
 
+# get book dom
 book_pages = []
 for l in book_links:
 	# book_pages.append(pool.apply_async(requests.get, args=[base_url + l], callback=on_success, error_callback=on_error))
@@ -49,10 +47,13 @@ for b in book_pages:
 		book.append(author[0])
 		book.append(lib[0])
 		book.append(pubs[0])
-		book.append(categories[0])
+		book.append(';'.join(categories))
 
 		book_datas.append(book)
 	except:
 		continue
 
-print(book_datas)
+with open('out.csv', 'w', newline='') as csvfile:
+	writer = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+	writer.writerow(['Title', 'Author', 'Library', 'Publisher', 'Category'])
+	writer.writerows(book_datas)
