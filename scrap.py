@@ -53,7 +53,7 @@ for b in book_pages:
 	except:
 		continue
 
-with open('out.csv', 'w', newline='') as csvfile:
+with open('./inpute/data.csv', 'w', newline='') as csvfile:
 	writer = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 	writer.writerow(['Title', 'Author', 'Library', 'Publisher', 'Category'])
 	writer.writerows(book_datas)
