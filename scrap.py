@@ -30,6 +30,7 @@ for l in book_links:
 	except:
 		continue
 
+# get array of [title, author, library, publisher, categories]
 book_datas = []
 for b in book_pages:
 	try:
@@ -53,7 +54,8 @@ for b in book_pages:
 	except:
 		continue
 
-with open('./inpute/data.csv', 'w', newline='') as csvfile:
+# write to csv file
+with open('./input/data.csv', 'w', newline='') as csvfile:
 	writer = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 	writer.writerow(['Title', 'Author', 'Library', 'Publisher', 'Category'])
 	writer.writerows(book_datas)
