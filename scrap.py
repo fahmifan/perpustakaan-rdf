@@ -16,16 +16,17 @@ books = tree.xpath('//div[@class="item biblioRecord uk-text-center "]')
 # url to the book
 book_links = []
 for b in books:
-	links = b.xpath('//div[@class="detail-list"]//a')
+	links = b.xpath('//div[@class="detail-list"]/h4/a')
 	for l in links:
-		book_links.append(l.attrib['href'])
+		href = l.attrib['href']
+		if href not in book_links: 
+			book_links.append(href)
 
 # get book dom
 book_pages = []
 for l in book_links:
-	# book_pages.append(pool.apply_async(requests.get, args=[base_url + l], callback=on_success, error_callback=on_error))
 	try:
-		b = requests.get(base_url + l, timeout=1)
+		b = requests.get(base_url + l)
 		book_pages.append(b)
 	except:
 		continue
