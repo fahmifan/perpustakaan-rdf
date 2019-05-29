@@ -13,7 +13,7 @@ function getCats(books) {
 
     for (let j = 0; j < bcats.length; j++) {
       const jbcat = bcats[j];
-      ncats[jbcat] = jbcat.split(" ").map(c => c.trim()).join("_");
+      ncats[jbcat] = i+"_"+j
     }
   }
 
@@ -38,7 +38,7 @@ function getPubs(books) {
   let pubs = {};
   for (let i = 0; i < books.length; i++) {
     const b = books[i];
-    pubs[b.Publisher] = b.Publisher.split(" ").map(t => t.trim()).join("_");
+    pubs[b.Publisher] = i+1
   }
 
   return pubs;
@@ -73,7 +73,7 @@ function getAuthor(books) {
     const b = books[i];
     const comma = b.Author.indexOf(",")
     const a = comma ? rmComma(comma, b.Author) : b.Author
-    auths[b.Author] = a.split(" ").map(a => a.trim()).join("_");
+    auths[b.Author] = i+1
   }
 
   return auths;
@@ -166,7 +166,7 @@ function main() {
     });
     
     const bookOwl = `
-    :Book_${b.No}  a   :Book , owl:NamedIndividual ;
+    :Book_${i+1}  a   :Book , owl:NamedIndividual ;
             :archivedIn   :FMIPA ;
             :kindOf       ${cats} ;
             :name         "${b.Title}" ;
