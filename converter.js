@@ -25,8 +25,8 @@ function createCategories(cats) {
   let bcats = '';
   Object.keys(cats).forEach(c => {
     cat = `
-    :Cat_${cats[c]}  a  owl:NamedIndividual ;
-            :name   "${c}" .
+    :Cat_${cats[c]}  a :Category, owl:NamedIndividual ;
+            :name   "${c}"^^xsd:string .
     \n`
     bcats += cat;
   });
@@ -51,7 +51,7 @@ function createPubs(pubs) {
     p = `
     :Pub_${pubs[el]}
             a       :Publisher , owl:NamedIndividual ;
-            :name   "${el}" .
+            :name   "${el}"^^xsd:string .
     \n`
 
     spubs += p
@@ -84,7 +84,7 @@ function createAuthor(auths) {
   Object.keys(auths).forEach(el => {
     const a = `
     :Auth_${auths[el]}  a  :Author , owl:NamedIndividual ;
-            :name   "${el}" .
+            :name   "${el}"^^xsd:string .
     \n`
 
     sauths += (a);
@@ -169,7 +169,7 @@ function main() {
     :Book_${i+1}  a   :Book , owl:NamedIndividual ;
             :archivedIn   :FMIPA ;
             :kindOf       ${cats} ;
-            :name         "${b.Title}" ;
+            :name         "${b.Title}"^^xsd:string ;
             :publishedBy  :Pub_${bpubs[b.Publisher]} ;
             :writtenBy    :Auth_${bauthor[b.Author]} .
     \n`;
