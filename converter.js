@@ -5,6 +5,7 @@ const fs = require('fs');
 const bookFile = fs.readFileSync('./input/data.json')
 const books = JSON.parse(bookFile.toString())
 
+// get books category
 function getCats(books) {
   let ncats = {};
   for (let i = 0; i < books.length; i++) {
@@ -20,7 +21,7 @@ function getCats(books) {
   return ncats;
 }
 
-// create categories class
+// create rdf/ttl string of categories class
 function createCategories(cats) {
   let bcats = '';
   Object.keys(cats).forEach(c => {
@@ -34,6 +35,7 @@ function createCategories(cats) {
   return bcats;
 }
 
+// get books publisher
 function getPubs(books) {
   let pubs = {};
   for (let i = 0; i < books.length; i++) {
@@ -44,6 +46,7 @@ function getPubs(books) {
   return pubs;
 }
 
+// create rdf/ttl string of books publisher
 function createPubs(pubs) {
   let spubs = '';
 
@@ -60,6 +63,7 @@ function createPubs(pubs) {
   return spubs;
 }
 
+// remove comma of index
 function rmComma(index, str) {
   const before = str.substring(0, index)
   const after = str.substring(index+1, str.length)
@@ -67,6 +71,7 @@ function rmComma(index, str) {
   return  before + ' ' + after 
 }
 
+// get books author
 function getAuthor(books) {
   let auths = {};
   for (let i = 0; i < books.length; i++) {
@@ -79,6 +84,7 @@ function getAuthor(books) {
   return auths;
 }
 
+// create rdf/ttl string of author
 function createAuthor(auths) {
   let sauths = ''
   Object.keys(auths).forEach(el => {
@@ -93,6 +99,7 @@ function createAuthor(auths) {
   return sauths;
 }
 
+// rdf/ttl header
 const header = () => {
   return `
       @prefix :      <http://www.semanticweb.org/boi/ontologies/2019/4/perpustakaan#> .
@@ -142,8 +149,8 @@ const header = () => {
       \n
   `
 }
-  
 
+// wiring up everything
 function main() {
   const bcats = getCats(books);
   const bpubs = getPubs(books)
@@ -165,6 +172,7 @@ function main() {
       }
     });
     
+    // write book in owl format
     const bookOwl = `
     :Book_${i+1}  a   :Book , owl:NamedIndividual ;
             :archivedIn   :FMIPA ;
@@ -174,16 +182,18 @@ function main() {
             :writtenBy    :Auth_${bauthor[b.Author]} .
     \n`;
   
+    // concat all bookOWl
     booksOwl += bookOwl
-
   }
 
+  // concat header book categories, authors, publisher and books
   const owls = header() 
     + createCategories(bcats) 
     + createAuthor(bauthor) 
     + createPubs(bpubs) 
     + booksOwl;
 
+  // write into ttl
   fs.writeFileSync('./output/perpustakaan.ttl', owls)
 }
 
